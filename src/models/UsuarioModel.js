@@ -7,8 +7,8 @@ const UsuarioSchema = new mongoose.Schema({
     possui_deficiencia : Boolean,
     idade : Number,
     plano : String,
-    data_matricula : Date,
-    data_vencimento : Date
+    data_matricula : String,
+    data_vencimento : String
 }, {versionKey : false});
 
 const UsuarioModel = mongoose.model('usuarios', UsuarioSchema);
